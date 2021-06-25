@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 require("./db/conn")
-const User= require("./models/usermsg")
+//const User= require("./models/usermsg")
 const hbs = require("hbs");
 const app = express();
 const port = process.env.Port || 4000;
@@ -17,7 +17,7 @@ app.use('/css', express.static(path.join(__dirname,"../node_modules/bootstrap/di
 app.use('/js', express.static(path.join(__dirname,"../node_modules/bootstrap/dist/js")))
 app.use('/jq', express.static(path.join(__dirname,"../node_modules/jquery/dist")))
 
-app.use(express.urlencoded({extended:false}))
+//app.use(express.urlencoded({extended:false}))
 app.use(express.static(staticpath))
 app.set("view engine","hbs")
 app.set("views",templatepath)
@@ -33,7 +33,7 @@ app.get("/login",(req,res)=>{
 })
 
 
-app.post("/contact",async(req,res)=>{
+/*app.post("/contact",async(req,res)=>{
    try{
    // res.send(req.body);
    const userData = new User(req.body);
@@ -47,4 +47,4 @@ app.post("/contact",async(req,res)=>{
 //server create
 app.listen(port,()=>{
     console.log(`server is running on ${port}`)
-})
+})*/
