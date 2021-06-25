@@ -18,7 +18,5 @@
     "mongoose": "^5.12.13",
     "validator": "^13.6.0"
   }
-    "devDependencies": {
-    "nodemon": "6.14.10"
-  }
+    
 }
