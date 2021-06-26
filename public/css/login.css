@@ -1,0 +1,79 @@
+body{
+    background: url(/img/Ln.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    font-family: 'Baloo Tamma 2', cursive;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+.container h1{
+    font-size: 40px;
+    border-bottom: 5px solid purple;
+    margin-bottom: 43px;
+    padding: 13px 0;
+}
+.box{
+    width: 100%;
+    margin: 32px 0;
+   border-bottom: 2px solid purple;
+}
+.box input{
+    background: none;
+    width: 75%;
+    font-size: 23px;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    color: white;
+}
+.btn-login{
+    font-size: 16px;
+    font-family: 'Baloo Tamma 2', cursive;
+    color:white;
+    background: rgb(98, 97, 97);
+    width: 29%;
+    outline: none;
+    cursor: pointer;
+    margin: 6px 0;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid purple;
+
+}
+.btn-login:hover{
+    color: white;
+    background: none;
+}
+.box i{
+    padding: 0px 12px;
+    width: 25px;
+    text-align: center;
+
+}
+@media only screen and (max-width:990px)
+{
+.container{
+    display: flex;
+    flex-direction: column;
+    left:32%;
+    top:29%;
+}
+.container h1{
+   font-size: 45px;
+  
+}
+.box input{
+    font-size: 25px;
+
+}
+.box{
+    font-size: 25px;
+}
+.btn-login{
+    text-align: center;
+}
+}
