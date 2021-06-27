@@ -1,12 +1,13 @@
 const express = require('express')
 const path = require('path')
-require("./db/conn")
+const connectDB=require('./db/conn')
 const User= require("./models/usermsg")
 const hbs = require("hbs");
 const app = express();
 const port = process.env.Port || 4000;
 
 //setting the path
+connectDB();
 const staticpath =path.join(__dirname,"../public");
 const partialpath =path.join(__dirname,"../templates/partials");
 const templatepath =path.join(__dirname,"../templates/views");
